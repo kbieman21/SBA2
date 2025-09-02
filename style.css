@@ -59,6 +59,9 @@ p {
   /* padding: 20rem; */
 }
 
+.main-nav{
+    display: flex;
+}
 .main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -72,8 +75,9 @@ p {
 #main {
 }
 
-@media (max-width: 600px) {
-  .main-nav ul {
-    flex-direction: column;
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
   }
 }
+
