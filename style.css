@@ -1,0 +1,79 @@
+/* attribute selector */
+
+/* input[type="text"] { border: 1px solid #ccc; } */
+
+body {
+  background-color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding: 40px 15px; */
+}
+
+nav {
+  /* position: fixed;
+top: 0;
+left: 0;
+height: 40px;
+width: 100%;
+display: flex;
+align-items: center;
+background-color: rgb(215, 223, 231);
+border-bottom: 1px solid rgb(140, 150, 160); */
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style-type: none;
+  margin: 0;
+}
+
+nav a {
+  color: midnightblue;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: slateblue;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* element selector */
+p {
+  color: green;
+}
+
+/* class selector */
+.hero {
+  /* padding: 20rem; */
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+}
+
+/* id selector */
+#home {
+}
+#main {
+}
+
+@media (max-width: 600px) {
+  .main-nav ul {
+    flex-direction: column;
+  }
+}
