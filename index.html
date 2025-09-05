@@ -31,16 +31,16 @@
             
           </article>
         </section>
-        <section id="aboutUs">
-          <h2>About Us</h2>
+        <section id="aboutUs" aria-labelledby="about-heading">
+          <h2 id="about-heading">About Us</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Dolorum hic sed dignissimos incidunt doloribus, totam sint eum vero quam ex 
             voluptatibus quaerat, pariatur voluptate ea molestias velit consectetur delectus quod?
           </p>
         </section>
-        <section id="services">
-          <h3>Services</h3>
+        <section id="services" aria-labelledby="service-heading">
+          <h3 id="service-heading">Services</h3>
           <ul class="serviceList">
             <li>
               <h4>Hand Paint</h4>
@@ -68,17 +68,20 @@
             </li>
           </ul>
         </section>
-        <section id="contact">
-            <h4>Contact Us</h4>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h4 id="contact-heading">Contact Us</h4>
             <form action="">
                 <label for="name">Name</label>
-                <input type="name" id="name" name="name" placeholder="Kibreab Solomon" style="width: 200px; padding: 10px; border: 1px solid #ccc;" required>
+                <input type="text" id="name" name="name" aria-describedby="nameHelp" placeholder="Kibreab Solomon"  required>
+                <small id="nameHelp" class="sr-only">Enter full name</small>
                 <br>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="example@fun.com" style="width: 200px; padding: 10px; border: 1px solid #ccc;" required>
+                <input type="email" id="email" name="email" aria-describedby="emailHelp" placeholder="example@fun.com"  required>
+                <small id="emailHelp" class="sr-only">Enter your email to contact us</small>
                 <br>
                 <label for="message">Message</label>
-                <input type="text" id="message" name="message" placeholder="some text" style="width: 600px; height: 500; padding: 10px; border: 1px solid #ccc;" required>
+                <input type="text" id="message" name="message" aria-describedby="messageError" placeholder="some text" style="width: 600px; height: 500px; padding: 10px; border: 1px solid #ccc;" required>
+                <small id="messageError" class="error" >You must write a message</small>
                 <br>
                 <button class="myButton" type="button">Send</button>
                 

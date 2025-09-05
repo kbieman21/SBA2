@@ -122,7 +122,27 @@ nav ul {
   margin: 5px;
 } */
 
+form {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #dbcccc;
+  border-radius: 4px; /* Optional: nicer corners */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
 
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
 
 footer {
   position: fixed;
@@ -158,6 +178,20 @@ form{
     font-size: 18px;
   }
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
 
 a img {
   border: none;
