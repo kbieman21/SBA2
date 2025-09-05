@@ -7,45 +7,108 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav class="main-nav">
-        <ul>
+    <header role="header">
+      <nav role="navigation" aria-label="main-nav">
+        <ul class="nav">
           <li>
-            <a href="#main">
-              <img src="logo.png" width="100%" height="20" alt="company log" />
+            <a href="#hero">
+              <img src="logo.png" width="100%" height="50" alt="company log" />
             </a>
           </li>
-          <li><a href="#main">Home</a></li>
+          <!-- <li><a href="#main">Home</a></li> -->
           <li><a href="#hero">Hero</a></li>
           <li><a href="#aboutUs">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    <!-- <main class="main">        
-        <section class="hero">Hero</section>
-        <section class="aboutUs">About Us</section>
-        <section class="services">Services</section>
-        <section class="cotact">
-            <form >
+     <main role="main">        
+        <section id="hero">
+          <h1>Never Miss the Best Design</h1>
+          <article>
+            <a href="#hero"> <img src="logo.png" width="50%" height="100" alt="Designed Logo"/></a>
+            
+          </article>
+        </section>
+        <section id="aboutUs">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Dolorum hic sed dignissimos incidunt doloribus, totam sint eum vero quam ex 
+            voluptatibus quaerat, pariatur voluptate ea molestias velit consectetur delectus quod?
+          </p>
+        </section>
+        <section id="services">
+          <h3>Services</h3>
+          <ul class="serviceList">
+            <li>
+              <h4>Hand Paint</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptas cupiditate error consectetur odit consequuntur quibusdam, 
+                eveniet porro quos possimus eligendi pariatur eius necessitatibus 
+                suscipit sed! Neque veniam ipsa minus quam!
+              </p>
+            </li>
+            <li>
+              <h4>Abstract</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quas quibusdam unde minus. Itaque nostrum, incidunt doloribus 
+                totam ea possimus modi at enim quidem vitae excepturi delectus 
+                obcaecati quod commodi temporibus.
+              </p>
+            </li>
+            <li>
+              <h4>Nature</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aspernatur, voluptas. Eos quis est, illo ab maiores iusto, 
+                fugiat aspernatur ipsum at, quod tempore consequatur. 
+                Autem repudiandae praesentium harum aliquam voluptatum!
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section id="contact">
+            <h4>Contact Us</h4>
+            <form action="">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Kibreab Solomon">
+                <input type="name" id="name" name="name" placeholder="Kibreab Solomon" style="width: 200px; padding: 10px; border: 1px solid #ccc;" required>
                 <br>
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="example@fun.com">
+                <input type="email" id="email" name="email" placeholder="example@fun.com" style="width: 200px; padding: 10px; border: 1px solid #ccc;" required>
                 <br>
-                <label for="message">message</label>
-                <input type="text" id="message" name="message" placeholder="some text">
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" placeholder="some text" style="width: 600px; height: 500; padding: 10px; border: 1px solid #ccc;" required>
+                <br>
+                <button class="myButton" type="button">Send</button>
+                
             </form>
         </section>
-        <article class="dailyNews">
-            <h6>Daily News</h6>
-            <p id="todayNew">This will display daily news for us</p>
-        </article>
+        <!-- <section id="dailyNews">
+          <h4>Daily News</h4>
+          <div id="overallNews">
+            <article>
+            <h5>Local News</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum cum quod. 
+              Animi expedita corporis obcaecati aut rerum iste modi voluptate quis dolore 
+              praesentium doloribus, recusandae quaerat sequi, repellendus dignissimos.
+            </p>
+          </article>
+          <article>
+            <h5>Global News</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, explicabo distinctio, 
+              laboriosam ex, aut quibusdam id minus provident sequi autem ratione? Praesentium 
+              iste aut ullam doloribus vel minus dolores quos?
+            </p>
+          </article>
+          </div>
+        </section> -->
+        
         
     <main>
     
-    <footer>&copy; 2025 My Company</footer> -->
+    <footer>
+      <p>&copy; 2025 My Company</p>      
+    </footer> 
   </body>
 </html>
